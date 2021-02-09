@@ -25,7 +25,7 @@ namespace Business.Concrete
             }
             else
             {
-                Console.WriteLine("Lütfen günlük fiyat kısmını 0'dan büyük giriniz. Girdiğiniz değer : {car.DailyPrice}");
+                Console.WriteLine("Lütfen günlük fiyat kısmını 0'dan büyük giriniz. Girdiğiniz değer :"+car.DailyPrice);
             }
         }
 
@@ -60,11 +60,11 @@ namespace Business.Concrete
             return _carDal.Get(p => p.CarId == id);
         }
 
-        /*public List<Car> GetByModelYear(int year)
+        public List<Car> GetByModelYear(int year)
         {
             //return _carDal.GetAll(c => c.ModelYear.(year) == true);
             return _carDal.GetAll(p => p.ModelYear == year);
-        }*/
+        }
 
         public void Update(Car car)
         {
@@ -75,7 +75,7 @@ namespace Business.Concrete
             }
             else
             {
-                Console.WriteLine($"Lütfen günlük fiyat kısmını 0'dan büyük giriniz. Girdiğiniz değer : {car.DailyPrice}");
+                Console.WriteLine("Lütfen günlük fiyat kısmını 0'dan büyük giriniz. Girdiğiniz değer :" +car.DailyPrice);
             }
         }
     }
