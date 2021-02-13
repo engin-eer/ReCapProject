@@ -27,7 +27,7 @@ namespace Business.Concrete
 
         public List<Color> GetAll()
         {
-            throw new NotImplementedException();
+            return _colorDal.GetAll();
         }
 
         public Color GetById(int id)
