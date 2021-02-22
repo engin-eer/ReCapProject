@@ -14,9 +14,9 @@ namespace Business.Concrete
     {
         ICarDal _carDal;
 
-        public CarManager(ICarDal icarDal)
+        public CarManager(ICarDal carDal)
         {
-            _carDal = icarDal;
+            _carDal = carDal;
         }
 
         public IResult Add(Car car)
@@ -48,7 +48,7 @@ namespace Business.Concrete
         }
         public IDataResult<Car> GetById(int id)
         {
-            return new SuccessDataResult<Car>(_carDal.Get(p => p.CarId == id));
+            return new SuccessDataResult<Car>(_carDal.Get(c => c.CarId == id));
         }
 
         public IDataResult<List<Car>> GetAllByBrandId(int id)

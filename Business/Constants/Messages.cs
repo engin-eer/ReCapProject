@@ -18,6 +18,7 @@ namespace Business.Constants
         public static string BrandDeleted = "Marka başarıyla silindi.";
         public static string BrandUpdated= "Marka başarıyla güncellendi.";
         public static string BrandListed = "Brand is listed";
+        public static string BrandNameInvalid = "Lütfen marka adını en az 2 karakter giriniz";
 
         public static string ColorAdded = "Renk başarıyla eklendi.";
         public static string ColorDeleted = "Renk başarıyla silindi.";
