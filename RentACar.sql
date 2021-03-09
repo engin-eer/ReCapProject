@@ -69,10 +69,10 @@ VALUES
 	('2','TheKarabels'),
 	('3','WL German Shepherd');
 
-	CREATE TABLE dboCarImages (
+	CREATE TABLE CarImages (
     Id           INT      PRIMARY KEY      IDENTITY (1, 1) NOT NULL,
     CarId        INT,
     ImagePath    NVARCHAR (MAX),
-    CarImageDate DATETIME,
+    ImageDate DATETIME,
     FOREIGN KEY (CarId) REFERENCES Cars(CarId)
 );
