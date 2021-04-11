@@ -20,6 +20,8 @@ namespace Business.Abstract
 
         IDataResult<List<CarDetailDto>> GetCarDetails();
 
+        IResult TransactionalOperation(Car car);
+
         //List<Car> GetByModelYear(int year);
     }
 }
